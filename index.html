@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+</head>
+<body>
+    <div>
+        <h1>Mi Reproductor de Video</h1>
+        <video id="videoPlayer" width="640" height="360" controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <button onclick="playVideo()">Reproducir</button>
+            <button onclick="pauseVideo()">Pausar</button>
+        </div>
+    </div>
+
+    <script>
+        var video = document.getElementById('videoPlayer');
+
+        function playVideo() {
+            video.play();
+        }
+
+        function pauseVideo() {
+            video.pause();
+        }
+    </script>
+</body>
+</html>
